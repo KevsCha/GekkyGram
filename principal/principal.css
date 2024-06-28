@@ -1,0 +1,390 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+:root{
+    --linea-gris:rgb(209, 209, 209);
+}
+header{
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(4px);
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+.icono1{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+}
+.lupa{
+    width: 25px;
+    margin-right: 10px;
+}
+.mensaje{
+    margin: 0 10px;
+    width: 27px;
+    height: auto;
+} 
+.usuario{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+}
+.iconos{
+    display: flex;
+    align-items: center;
+
+}
+.foto{
+    width: 35px;
+    height: 35px;
+    background-image: url("https://i0.wp.com/www.mobileworldlive.com/wp-content/uploads/2018/03/Mark-Zuckerberg-Facebook-CEO.jpg?fit=650%2C433&ssl=1");
+    border: 1px solid var(--linea-gris);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.buscador{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(196, 196, 196, 0);
+    height: 42px;
+    border-radius: 20px;
+    transition: .5s;
+    
+}
+.buscador-v{
+    background-color: rgb(235, 235, 235);
+    padding-left: 20px;
+    padding-right: 10px;
+    box-shadow: rgba(158, 158, 158, 0.16) 0px 1px 4px;
+}
+.b{
+    font-size: 18px;
+    width: 0px;
+    padding: 0;
+    transition: .5s;
+    border: none;
+    background-color: rgba(0, 128, 86, 0);
+}
+
+.b-visible{
+    display: block;
+    width: 250px;
+    height: 30px;
+    background-color: rgba(0, 255, 255, 0);
+    border: none;
+    transition: .5s;
+    padding-right: 10px;
+}
+
+
+.buscador1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 20px 0 ;
+    margin-top: 10px;
+}
+
+.buscador1 input[type="text"]{
+   
+    background-color: rgb(237, 237, 237);
+    width: 100%;
+    height: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 30px;
+    background-image: url("lupa5.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    font-size: 16px;
+    
+}
+
+.item-usuario{
+    color: rgb(106, 106, 106);
+    width: 330px;
+    height: 80vh;
+    background-color: white;
+    border: 1px solid rgb(232, 232, 232);
+    padding: 20px;
+    position: fixed;
+    top: 50px;
+    z-index: 500;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    display: none;
+    opacity: 0;
+    right: 10%;
+    transition: .3s;
+}
+.usuarios{
+    height: 50px;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    /* border: 1px solid red; */
+}
+
+.usuarios img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.delet{
+    position: absolute;
+    right: 0px;
+    transition: .5s;
+}
+.delet:hover{
+    transform: scale(1.2);
+}
+.u-visible{
+    top: 50px;
+    right: 10%;
+    border: 1px solid rgb(232, 232, 232);
+    z-index: 500;
+    display: block;
+    opacity: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION GALERIA*/
+
+.datos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+
+.divfotoPerfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.fotoPerfil{
+
+    width: 100%;
+    height: 100%;
+}
+.nombreperfil{
+    width: 500px;
+    text-align: center;
+
+}
+.nombreperfil h2{
+    margin-bottom: 20px;
+}
+.nombreperfil p{
+    margin-bottom: 20px;
+}
+
+.boton2{
+    display: flex;
+    align-items: center;
+}
+
+.seguir{
+ border: none;
+ background: #FF416C;
+ background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+ background: linear-gradient(to right, #FF4B2B, #FF416C);
+ padding: 10px 25px;
+ color: white;
+ border-radius: 25px;
+ font-size: 18px;
+ margin: 10px;
+}
+.mj{
+    border: none;
+    background: #dadada;
+    padding: 10px 25px;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    font-size: 18px;
+}
+.punto{
+    margin: 10px 30px;
+    cursor: pointer;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+.punto:hover{
+  background-color: rgb(230, 230, 230);
+}
+
+
+.itemPuntos{
+    width: 200px;
+    height: 200px;
+    display: none;
+    position: absolute;
+    margin-left: 185px;
+    margin-top: 260px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(232, 232, 232);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.i-visible{
+    display: block;
+}
+.cajaGaleria{
+    margin-top: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fotoGaleria{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION DOS  SUBIR FOTO*/
+
+.cajaDeSubirFoto{
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    border: 1px solid rgb(232, 232, 232);
+    background-color: rgb(255, 255, 255);
+    bottom: 50px;
+    border-radius: 5px;
+    box-shadow: rgba(88, 88, 88, 0.35) 0px 5px 15px;
+  
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.subirFoto-v{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+.fotoAsubir{
+    background-image: url("galeri1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid rgb(194, 194, 194);
+}
+.x{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+.file-select {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .file-select::before {
+    background: #FF416C;
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    content: 'Seleccionar';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .file-select input[type="file"] {
+    opacity: 0;
+    width: 200px;
+    height: 32px;
+    display: inline-block;
+  }
+  
+  #src-file1::before {
+    content: 'Seleccionar Archivo 1';
+  }
+  
+  #src-file2::before {
+    content: 'Seleccionar Archivo 2';
+  }
+  
